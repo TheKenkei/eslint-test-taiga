@@ -1,0 +1,64 @@
+{
+    "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/master/cspell.schema.json",
+    "import": ["@taiga-ui/cspell-config/cspell.config.js"],
+    "files": ["*/*.*"],
+    "ignorePaths": [
+        ".git",
+        "CHANGELOG.md",
+        ".cspell.json",
+        ".github/CODEOWNERS",
+        "**/dist/**",
+        "**/cspell/**",
+        "**/assets/**",
+        "**/node_modules/**",
+        "*.{log,svg,snap,png,ogv,yml}",
+        "**/projects/i18n/languages/**",
+        "**/addon-commerce/enums/currency-code.ts",
+        "**/addon-commerce/utils/get-currency-symbol.ts",
+        "**/demo-playwright/stubs",
+        "**/.vscode/**"
+    ],
+    "ignoreWords": ["preid", "Quarterpounder", "tuilabel"],
+    "ignoreRegExpList": ["\\(https?://.*?\\)", "\\/{1}.+\\/{1}", "\\%2F.+", "\\%2C.+", "\\ɵ.+", "\\ыва.+"],
+    "overrides": [
+        {
+            "filename": ["**/components/loader/index.html"],
+            "ignoreWords": ["protestin", "spittin", "callin", "yellin"]
+        },
+        {
+            "filename": ["**/i18n/README.md"],
+            "ignoreWords": ["odzumiraj", "zumiraj", "rotiraj"]
+        },
+        {
+            "filename": ["**/example.md"],
+            "ignoreWords": ["xxxHTMLyyy"]
+        },
+        {
+            "filename": ["**/highlight/test/highlight.directive.spec.ts"],
+            "ignoreWords": ["aaabbb"]
+        },
+        {
+            "filename": ["**/tests/kit/input-tag/input-tag.cy.ts"],
+            "ignoreWords": ["looooooooooooooooooooooooong"]
+        },
+        {
+            "filename": ["**/tests/schematic-replace-consts.spec.ts", "**/constants/constants.ts"],
+            "ignoreWords": ["Comands"]
+        },
+        {
+            "languageId": "ts",
+            "filename": ["**/replace.pipe.spec.ts"],
+            "ignoreWords": ["abcdeabcde", "fbcdefbcde"]
+        },
+        {
+            "languageId": "ts",
+            "filename": ["**/tests/schematic-migrate-sliders.spec.ts"],
+            "ignoreWords": ["Maxxxxx"]
+        },
+        {
+            "languageId": "ts",
+            "filename": ["**/textarea.spec.ts"],
+            "ignoreWords": ["qwertypgj_"]
+        }
+    ]
+}
